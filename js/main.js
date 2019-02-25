@@ -7,3 +7,5 @@ requirejs.config({
 });
 
 requirejs(['modulo']);
+
+console.log("holisiri!")
