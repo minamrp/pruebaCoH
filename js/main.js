@@ -8,4 +8,7 @@ requirejs.config({
 
 requirejs(['modulo']);
 
-console.log("holisiri!")
+
+console.log("holisiri!");
+
+
