@@ -1,9 +1,7 @@
 define('modulo', ['jquery'], function ($) {
 
     var modulo = {
-        //START
 
-        //Private attributes
         _lista: {
             A: "Primer elemento",
             B: "Segundo elemento",
@@ -13,15 +11,11 @@ define('modulo', ['jquery'], function ($) {
         },
         _MENSAJE: "Elemento enviado: ",
 
-        //Public attributes
-
-        //Public methods
         init: function () {
             const list = modulo._lista;
-            console.log(list);
 
             $(document).ready(function () {
-                console.log("holiiii");
+
                 $("h1").addClass("title__page");
                 $(".title__page").html("Selecciona un elemento de la lista");
                 
@@ -54,23 +48,13 @@ define('modulo', ['jquery'], function ($) {
             
             function selectedOption(e){
                 eventValue = e.currentTarget.value;
-                console.log(eventValue);
 
             }
 
             $(document).on("change", "select", selectedOption);
 
-            //call to ready method
-
-            //call to mockup method
-
-            //call to addEvents method
-
         },
 
-        //Private methods
-
-        //END
     };
     modulo.init();
 });
